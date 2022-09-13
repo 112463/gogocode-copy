@@ -22,13 +22,13 @@ Let's show you how to select and modify code with our API
 
 ```javascript
 const a = 1;
-const b = 23;
+const b = 20;
 ```
 
 ### Transform With GoGoCode
 
 ```javascript
-const $ = require('gogocode');
+const $ = require('gogocode');// 废弃
 const script = $(source);
 // use $_$ as a wildcard to match AST element at any position you want
 const aAssignment = script.find('const a = $_$');
